@@ -1,3 +1,9 @@
+# macOS
+.DS_Store
+
+# JetBrains Rider / IntelliJ
+.idea/
+
 # .NET
 bin/
 obj/
@@ -9,6 +15,9 @@ obj/
 # Node (npm install run by the front-end fixture during tests)
 node_modules/
 assets/frontend-fixture/package-lock.json
+dist/
+.vite/
+npm-debug.log*
 
 # Test results
 TestResults/
