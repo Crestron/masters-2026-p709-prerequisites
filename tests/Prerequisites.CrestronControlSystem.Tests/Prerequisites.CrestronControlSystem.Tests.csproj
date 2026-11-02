@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.6.0" />
+    <PackageReference Include="xunit.v3" Version="3.2.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+
+    <!--
+      Prerequisite floor, section 3: "working knowledge of Crestron programming concepts".
+      This is Crestron's official 4-Series / Virtual Control SDK, published on nuget.org.
+      If restore fails here, check for a newer version at
+      https://www.nuget.org/packages/Crestron.SimplSharp.SDK.Program before assuming your
+      network or feed configuration is at fault — Crestron ships new builds frequently.
+    -->
+    <PackageReference Include="Crestron.SimplSharp.SDK.Program" Version="2.22.15" />
+  </ItemGroup>
+
+</Project>
